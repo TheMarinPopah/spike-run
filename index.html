@@ -4,8 +4,35 @@
   <title>Spike Run</title>
  <link rel="stylesheet" href="style.css">
   <style>
+   body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0f0f2d, #1a1a40);
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: gold;
+}
+
+#score {
+  font-size: 22px;
+}
+
+#message {
+  font-size: 28px;
+  margin-top: 10px;
+  color: red;
+}
     /* Remove default spacing */
-    html, body {
+    body {
       margin: 0;
       padding: 0;
       overflow: hidden; /* No scrollbars */
