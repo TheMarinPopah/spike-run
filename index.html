@@ -1,35 +1,8 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <title>AI Geometry Dash</title>
-  <style>
-    /* Remove default spacing */
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* No scrollbars */
-      height: 100%;
-      background: black;
-    }
-
-    /* Make canvas fill screen */
-    canvas {
-      display: block;
-      width: 100vw;
-      height: 100vh;
-    }
-
-    /* UI styling */
-    #ui {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      color: white;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-      z-index: 10;
-    }
-  </style>
+  <title>Spike-Run</title>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <canvas id="gameCanvas"></canvas>
@@ -39,19 +12,7 @@
     <div id="message"></div>
   </div>
 
-  <script>
-    const canvas = document.getElementById("gameCanvas");
-    const ctx = canvas.getContext("2d");
-
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-
-    // Resize on load and when window changes
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-  </script>
+ <script src="script.js"></script>
 </body>
 </html>
 
